@@ -1,16 +1,99 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <title>Select a POE</title>
+</head>
+<body>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <a href="/Staff survey/index.html">Staff Survey</a>
-        <a href="/Patient survey/">Patient Survey</a>
-    </body>
+ 
+	<div class="first-header column"><!-- first header -->
+		<h2><u>Select a POE</u></h2>
+
+	</div><!-- close first header -->   
+
+	<nav class="banner-txt" id="banner-txt">
+	<ul class="nav">
+		<li><a href="/Patient survey/index.html"> <h2><u>Patient<br> POE</u></h2></a></li>
+    <li><a href="/Staff survey/index.html"> <h2><u>Staff<br> POE</u></h2></a></li>
+
+	</ul>
+
+	</nav>
+
+
+  
+
+ <script>
+  (function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuRootNode = settings.menuRootNode;
+      this.isOpened = false;
+    }
+    
+    changeMenuState(menuState) {
+      return this.isOpened = !menuState;
+    }
+    
+    changeToggleHint(toggleHint, toggleNode) {
+      toggleNode.textContent = toggleHint;
+      return toggleHint; 
+    }
+  }
+
+  const menuClassesNames = {
+    rootClass: 'menu',
+    activeClass: 'menu_activated',
+    toggleClass: 'menu__toggle',
+    toggleHintClass: 'menu__toggle-hint'
+  }
+  
+  const jsMenuNode = document.querySelector(`.${menuClassesNames.rootClass}`);
+  const demoMenu = new Menu ({
+    menuRootNode: jsMenuNode
+  });
+  
+  function getCurrentToggleHint(currentMenuState) {
+    return (currentMenuState !== true) ? 'Open menu' : 'Close menu';
+  }
+  
+  function toggleMenu(event) {
+    
+      let currentMenuState = demoMenu.changeMenuState(demoMenu.isOpened);
+      let toggleHint = getCurrentToggleHint(currentMenuState);
+      
+      demoMenu.changeToggleHint(
+        toggleHint, 
+        demoMenu.menuRootNode.querySelector(`.${menuClassesNames.toggleHintClass}`)
+      );
+      demoMenu.menuRootNode.classList.toggle(`${menuClassesNames.activeClass}`);
+      
+      return currentMenuState;  
+  }
+  
+  jsMenuNode.querySelector(`.${menuClassesNames.toggleClass}`).addEventListener('click', toggleMenu);
+})();
+ </script>
+
+<script> const hello = document.querySelector(".hello__div");
+    setInterval(hello__function, 20000);
+    function hello__function() {
+      hello.style.display = "none";
+      setTimeout(function () {
+        hello.style.display = "flex";
+      }, 10);
+    }
+    </script>
+
+  
+</body>
 </html>
