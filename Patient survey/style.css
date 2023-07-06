@@ -7,16 +7,16 @@ body {
 
 @font-face {
   font-family: 'HelveticaNeue_Light';
-  src: url('/fonts/HelveticaNeue_Light.woff2') format('woff2'),
-       url('/fonts/HelveticaNeue_Light.woff') format('woff');
+  src: url('fonts/HelveticaNeue_Light.woff2') format('woff2'),
+       url('fonts/HelveticaNeue_Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeue-Roman';
-  src: url('/fonts/HelveticaNeue-Roman.woff2') format('woff2'),
-       url('/fontsHelveticaNeue-Roman.woff') format('woff');
+  src: url('fonts/HelveticaNeue-Roman.woff2') format('woff2'),
+       url('fontsHelveticaNeue-Roman.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
