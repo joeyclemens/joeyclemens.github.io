@@ -3,6 +3,7 @@ body {
   background-color: white;
   font-family: 'HelveticaNeue_Light';
   margin: 0;
+  margin-left: 10px; /* Add margin to the left */
 }
 
 @font-face {
@@ -181,6 +182,7 @@ li {
 
 .banner2 {
   position: relative;
+  color: #000000;
   background-color: #fcbb88;
   width: 90%;
   border-radius: 50px;
@@ -195,6 +197,7 @@ li {
 
 .banner3 {
   position: relative;
+  color: #000000;
   background-color: #0096FF;
   width: 90%;
   border-radius: 50px;
@@ -206,6 +209,7 @@ li {
   left: 10px;
  font-family: 'HelveticaNeue_Light';
 }
+
 
 /* css for the hidden text box */
 .d-none {
