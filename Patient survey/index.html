@@ -19,7 +19,7 @@
        <div class="header">
         <img src="images/image001.png" alt="mjm logo">
        
-            <h1>Post Occupation Evaluation of <br> INSERT NAME HERE. <br> <u>Patient Survey</u> </h1>
+            <h1>Post Occupation Evaluation of <br> Tessa Jowell Health centre. <br> <u>Patient Survey</u> </h1>
             <p>
               <div class="progress-container">
                   <div class="progress-bar" id="myBar"></div>
@@ -33,7 +33,7 @@
         <div class="intro">
             <p>This post occupation evaluation asks for your views about 
                 the physical environment and your experience at 
-                <u><b>INSERT NAME HERE.</b></u>
+                <u><b>Tessa Jowell Health centre.</b></u>
                 Thinking about your recent visit to this clinic, 
                 please select the number that most closely represents 
                 your level of agreement with each statement below. 
@@ -64,27 +64,13 @@
                 
                 <label for="age">1. How old are you?<input type="number" id="age" name="age" min="1" max="150" required></label>
                     
-                
-
-                <br><br>
-       
-                <label for="transportation">2. How did you get to the clinic?</label>
-                <select id="transportation" name="transportation" required>
-                  <option value="">Please select</option>
-                  <option value="car">By car</option>
-                  <option value="Walk">Walk</option>
-                  <option value="Public">By bus or other public transportation</option>
-                </select>
-            
                 <br><br>
 
-                <label for="visits">3. How many times have you visited the clinic?<input type="number" id="visits" name="visits" min="1" max="1000" required></label>
-                    
-                
+                <label for="rfv">2. Reason for visit<br>
+                  <textarea id="rfv" name="rfv" rows="4" cols="50" required placeholder="Please enter your reason for visiting the Tella Jowell Health Centre"></textarea>
+              </label>
 
-                <br><br>
-
-                <div class="department"> <p>4. Which departments have you visited?</p>  </div>
+                <div class="department"> <p>3. Which departments have you visited?</p>  </div>
                    
               
                 <!--This next section is the incredibly long and complicated bit for the 
@@ -235,24 +221,31 @@
                         
                         </li>
                        
+
                       </ul>
+                      
                     </div> 
                   </div>
-                  <br>
+                 
                   <div><u>Currently selected:</u> <p class="current-selection"></p> </div>
                   <input type="hidden" name="selectedDepartments" id="selectedDepartmentsInput">
-                <br><br>
-                 <div class="minute">
-                <label for="waiting_time">5. How long did you wait in a waiting room or space?
-                    <input type="number" id="waiting_time" name="waiting_time" min="1" max="1000" required placeholder=" In Minutes"> 
-                </label>
-            </div>
+                  <br>
 
-            <br><br>
-          
-           <label for="inpatient_days">6. If you were an inpatient how many days did you stay?    <input type="number" id="inpatient_days" name="inpatient_days" min="0" max="1000" required placeholder="In days"> </label>
-          
-           </div>
+
+
+                <label for="transportation">2. How did you get to the clinic?</label>
+                <select id="transportation" name="transportation" required>
+                  <option value="">Please select</option>
+                  <option value="car">By car</option>
+                  <option value="Walk">Walk</option>
+                  <option value="Public">By bus or other public transportation</option>
+                  <option value="Cycle">By Bicycle</option>
+                </select>
+            
+                <br><br>
+
+
+                
            
            <div class="banner2">
             <h1>Clinic Design</h1>
@@ -266,7 +259,7 @@
         <div class="form1">
             <ol>
                 <label for="The_location_of_this_clinic">
-                    <li>The location of this clinic was convenient for me to get to </li>
+                    <li>The location of this Health Centre was convenient for me to get to </li>
                     <input
                         type="radio"
                         id="question1"
@@ -308,273 +301,273 @@
                 </label>
                         
 
-                <label for="easy_to_navigate_around_the_clinic">
-                    <li>I found it easy to navigate around the clinic, the corridors and spaces were well organized <br>and the signs were easy to understand and follow</li>
+                <label for="easy_access_to_building">
+                    <li>There was easy access to the building from the car park</li>
                     <input
                         type="radio"
                         id="question2"
-                        name="easy_to_navigate_around_the_clinic"
+                        name="easy_access_to_building"
                         value="1"
                         required>
                     <label for="13">1</label>
                     <input
                         type="radio"
                         id="question2"
-                        name="easy_to_navigate_around_the_clinic"
+                        name="easy_access_to_building"
                         value="2">
                     <label for="14">2</label>
                     <input
                         type="radio"
                         id="question2"
-                        name="easy_to_navigate_around_the_clinic"
+                        name="easy_access_to_building"
                         value="3">
                     <label for="15">3</label>
                     <input
                         type="radio"
                         id="question2"
-                        name="easy_to_navigate_around_the_clinic"
+                        name="easy_access_to_building"
                         value="4">
                     <label for="16">4</label>
                     <input
                         type="radio"
                         id="question2"
-                        name="easy_to_navigate_around_the_clinic"
+                        name="easy_access_to_building"
                         value="5">
                     <label for="17">5</label>
                     <input
                         type="radio"
                         id="question2"
-                        name="easy_to_navigate_around_the_clinic"
+                        name="easy_access_to_building"
                         value="N/A">
                     <label for="18">N/A</label>
                     
                 </label>
 
                 <br><br>
-                <label for="I_found_it_easy_to_navigate_around_the_clinic_text">
-                <textarea id="I_found_it_easy_to_navigate_around_the_clinic_text" type="textarea" name="I_found_it_easy_to_navigate_around_the_clinic_text" required placeholder="Please enter additional feedback for this question here"></textarea>
+                <label for="I_found_it_easy_access_to_building_text">
+                <textarea id="I_found_it_easy_access_to_building_text" type="textarea" name="I_found_it_easy_access_to_building_text" required placeholder="Please enter additional feedback for this question here"></textarea>
                 </label>
 
-                <label for="The_patient_waiting_area_was_well_designed">
-                    <li>The waiting area was well designed with a good selection of chairs</li>
+                <label for="first_impression">
+                    <li>My first impression of the building was reassuring</li>
                     <input
                         type="radio"
                         id="question3"
-                        name="The_patient_waiting_area_was_well_designed"
+                        name="first_impression"
                         value="1"
                         required>
                     <label for="25">1</label>
                     <input
                         type="radio"
                         id="question3"
-                        name="The_patient_waiting_area_was_well_designed"
+                        name="first_impression"
                         value="2">
                     <label for="26">2</label>
                     <input
                         type="radio"
                         id="question3"
-                        name="The_patient_waiting_area_was_well_designed"
+                        name="first_impression"
                         value="3">
                     <label for="27">3</label>
                     <input
                         type="radio"
                         id="question3"
-                        name="The_patient_waiting_area_was_well_designed"
+                        name="first_impression"
                         value="4">
                     <label for="28">4</label>
                     <input
                         type="radio"
                         id="question3"
-                        name="The_patient_waiting_area_was_well_designed"
+                        name="first_impression"
                         value="5">
                     <label for="29">5</label>
                     <input
                         type="radio"
                         id="question3"
-                        name="The_patient_waiting_area_was_well_designed"
+                        name="first_impression"
                         value="N/A">
                     <label for="30">N/A</label>
                 </label>
 
                 <br><br>
-                <label for="The_patient_waiting_area_was_well_designed_text">
-                <textarea id="The_patient_waiting_area_was_well_designed_text" type="textarea" name="The_patient_waiting_area_was_well_designed_text" placeholder="Please enter additional feedback for this question here"></textarea>
+                <label for="first_impression_text">
+                <textarea id="first_impression_text" type="textarea" name="first_impression_text" placeholder="Please enter additional feedback for this question here"></textarea>
                 </label>
 
-                <label for="I_was_Satisfied_with_the_waiting_experience">
-                    <li>The waiting room was at a good temperature and the lighting, views and noise made it a comfortable place to be </li>
+                <label for="i_feel_safe">
+                    <li>I feel safe in the building </li>
                     <input
                         type="radio"
                         id="question4"
-                        name="I_was_Satisfied_with_the_waiting_experience"
+                        name="i_feel_safe"
                         value="1"
                         required>
                     <label for="31">1</label>
                     <input
                         type="radio"
                         id="question4"
-                        name="I_was_Satisfied_with_the_waiting_experience"
+                        name="i_feel_safe"
                         value="2">
                     <label for="32">2</label>
                     <input
                         type="radio"
                         id="question4"
-                        name="I_was_Satisfied_with_the_waiting_experience"
+                        name="i_feel_safe"
                         value="3">
                     <label for="33">3</label>
                     <input
                         type="radio"
-                        id="question4"
-                        name="I_was_Satisfied_with_the_waiting_experience"
+                        id="question4"_feel_safe
+                        name="i_feel_safe"
                         value="4">
                     <label for="34">4</label>
                     <input
                         type="radio"
                         id="question4"
-                        name="I_was_Satisfied_with_the_waiting_experience"
+                        name="i_feel_safe"
                         value="5">
                     <label for="35">5</label>
                     <input
                         type="radio"
                         id="question4"
-                        name="I_was_Satisfied_with_the_waiting_experience"
+                        name="i_feel_safe"
                         value="N/A">
                     <label for="36">N/A</label>
 
                 </label>
                 <br><br>
-                <label for="I_was_Satisfied_with_the_waiting_experience_text">
-                <textarea id="I_was_Satisfied_with_the_waiting_experience_text" type="textarea" name="I_was_Satisfied_with_the_waiting_experience_text" placeholder="Please enter additional feedback for this question here"></textarea>
+                <label for="i_feel_safe_text">
+                <textarea id="i_feel_safe_text" type="textarea" name="i_feel_safe_text" placeholder="Please enter additional feedback for this question here"></textarea>
                 </label>
                 
 
-                <label for="The_exam_rooms_allowed_easy_communication">
+                <label for="The_layout_of_the_building">
                 
-                    <li>The clinic rooms allowed easy communication with clinician, ensured my privacy and <br>I felt my personal information would be secure</li>
+                    <li>The layout of the building works well overall</li>
                     <input
                         type="radio"
                         id="question5"
-                        name="The_exam_rooms_allowed_easy_communication"
+                        name="The_layout_of_the_building"
                         value="1"
                         required>
                     <label for="43">1</label>
                     <input
                         type="radio"
                         id="question5"
-                        name="The_exam_rooms_allowed_easy_communication"
+                        name="The_layout_of_the_building"
                         value="2">
                     <label for="44">2</label>
                     <input
                         type="radio"
                         id="question5"
-                        name="The_exam_rooms_allowed_easy_communication"
+                        name="The_layout_of_the_building"
                         value="3">
                     <label for="45">3</label>
                     <input
                         type="radio"
                         id="question5"
-                        name="The_exam_rooms_allowed_easy_communication"
+                        name="The_layout_of_the_building"
                         value="4">
                     <label for="46">4</label>
                     <input
                         type="radio"
                         id="question5"
-                        name="The_exam_rooms_allowed_easy_communication"
+                        name="The_layout_of_the_building"
                         value="5">
                     <label for="47">5</label>
                     <input
                         type="radio"
                         id="question5"
-                        name="The_exam_rooms_allowed_easy_communication"
+                        name="The_layout_of_the_building"
                         value="N/A">
                     <label for="48">N/A</label>
                 </label>
 
-                <label for="I_had_a_clear_view_in_the_exam_room">
-                <li>I had a clear view of the clinician and the computer screen in the exam room or other procedure rooms<br>(If there’s no computer, please select N/A as the answer)</li>
+                <label for="building_navigation">
+                <li>The building is easy to navigate with easy to follow signage</li>
                 
                 <input
                     type="radio"
                     id="question6"
-                    name="I_had_a_clear_view_in_the_exam_room"
+                    name="building_navigation"
                     value="1"
                     required>
                 <label for="49">1</label>
                 <input
                     type="radio"
                     id="question6"
-                    name="I_had_a_clear_view_in_the_exam_room"
+                    name="building_navigation"
                     value="2">
                 <label for="50">2</label>
                 <input
                     type="radio"
                     id="question6"
-                    name="I_had_a_clear_view_in_the_exam_room"
+                    name="building_navigation"
                     value="3">
                 <label for="51">3</label>
                 <input
                     type="radio"
                     id="question6"
-                    name="I_had_a_clear_view_in_the_exam_room"
+                    name="building_navigation"
                     value="4">
                 <label for="52">4</label>
                 <input
                     type="radio"
                     id="question6"
-                    name="I_had_a_clear_view_in_the_exam_room"
+                    name="building_navigation"
                     value="5">
                 <label for="53">5</label>
                 <input
                     type="radio"
                     id="question6"
-                    name="I_had_a_clear_view_in_the_exam_room"
+                    name="building_navigation"
                     value="N/A">
                 <label for="54">N/A</label>
             </label>
 
-            <label for="Clinic_infection_prevention_and_fresh_clean_environment">
-                <li>The clinic emphasized infection prevention and the clinic felt fresh and clean</li>
+            <label for="The_waiting_area_is_well_designed">
+                <li>The waiting area is well designed with a good selection of chairs</li>
                 <input
                     type="radio"
                     id="question7"
-                    name="Clinic_infection_prevention_and_fresh_clean_environment"
+                    name="The_waiting_area_is_well_designed"
                     value="1"
                     required>
                 <label for="55">1</label>
                 <input
                     type="radio"
                     id="question7"
-                    name="Clinic_infection_prevention_and_fresh_clean_environment"
+                    name="The_waiting_area_is_well_designed"
                     value="2">
                 <label for="56">2</label>
                 <input
                     type="radio"
                     id="question7"
-                    name="Clinic_infection_prevention_and_fresh_clean_environment"
+                    name="The_waiting_area_is_well_designed"
                     value="3">
                 <label for="57">3</label>
                 <input
                     type="radio"
                     id="question7"
-                    name="Clinic_infection_prevention_and_fresh_clean_environment"
+                    name="The_waiting_area_is_well_designed"
                     value="4">
                 <label for="58">4</label>
                 <input
                     type="radio"
                     id="question7"
-                    name="Clinic_infection_prevention_and_fresh_clean_environment"
+                    name="The_waiting_area_is_well_designed"
                     value="5">
                 <label for="59">5</label>
                 <input
                     type="radio"
                     id="question7"
-                    name="Clinic_infection_prevention_and_fresh_clean_environment"
+                    name="The_waiting_area_is_well_designed"
                     value="N/A">
                 <label for="60">N/A</label>
             </label>
 
-            <label for="This_clinic_utilized_up_to_date_technology">
-                <li>This clinic utilized the most up-to-date technology</li>
+            <label for="easy_access_to_visitor_toilets">
+                <li>There is easy access to visitor toilets</li>
                 <input
                     type="radio"
                     id="question8"
