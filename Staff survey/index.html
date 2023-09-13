@@ -16,7 +16,7 @@
     <div class="header">
         <img src="images/image001.png" alt="mjm logo">
 
-        <h1>Post Occupation Evaluation of <br>
+        <h1>Post Occupancy Evaluation of <br>
             Tessa Jowell Health centre. <br>Staff Survey </h1>
         <p>
         <div class="progress-container">
@@ -62,14 +62,34 @@
                         placeholder="Describe your current position"></textarea>
                 </label>
 
-                <br><br>
+   
+                 <P><u>Would this question be better as a drop down selection like below?</u></P>
+  
+                <label for="current-positiondd">What is your current role/Job title?</label>
+                  <select id="current-positiondd" name="current-positiondd" required>
+                    <option value="">Please select</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Nurse">Nurse</option>
+                    <option value="Other">Other</option>
+                    
+                  </select>
+                  <br><br>             <br><br>
 
                 <label for="department">What department do you work in?<br>
                     <textarea id="department" type="textarea" name="department" required
                         placeholder="What department do you work in?"></textarea>
                 </label>
             </div>
-
+                <P><u>Would this question be better as a drop down selection like below?</u></P>
+  
+                <label for="departmentdd">What department do you work in?</label>
+                  <select id="departmentdd" name="departmentdd" required>
+                    <option value="">Please select</option>
+                    <option value="One">Dept1</option>
+                    <option value="Two">Dept2</option>
+                    <option value="Three">Dept3</option>
+                    
+                  </select>
 
             <div class="banner3">
                 <h1>Clinic environment</h1>
@@ -86,28 +106,26 @@
 
             <div class="form1">
                 <ol>
-                    <label for="reassured_by_the_department’s_entrance">
-                        <li>Families/carers are reassured by the xxx department’s entrance</li>
-                        <input type="radio" id="question1" name="reassured_by_the_department’s_entrance" value="1"
+                    
+                    <label for="The_location_of_the_heath_centre_was_convenient">
+                        <li>The location of the heath centre was convenient for me to get to</li>
+                        <input type="radio" id="question2" name="The_location_of_the_heath_centre_was_convenient" value="1"
                             required>
-                        <label for="1">1</label>
-                        <input type="radio" id="question1" name="reassured_by_the_department’s_entrance" value="2">
-                        <label for="2">2</label>
-                        <input type="radio" id="question1" name="reassured_by_the_department’s_entrance" value="3">
-                        <label for="3">3</label>
-                        <input type="radio" id="question1" name="reassured_by_the_department’s_entrance" value="4">
-                        <label for="4">4</label>
-                        <input type="radio" id="question1" name="reassured_by_the_department’s_entrance" value="5">
-                        <label for="5">5</label>
-                        <input type="radio" id="question1" name="reassured_by_the_department’s_entrance" value="N/A">
-                        <label for="6">N/A</label>
-                    </label>
-                    <br><br>
-                    <!--<label for="reassured_by_the_department’s_entrance_text">
-                <textarea id="reassured_by_the_department’s_entrance_text" type="textarea" name="reassured_by_the_department’s_entrance_text" required placeholder="Please enter additional feedback for this question here"></textarea>
-                
-                </label>-->
+                        <label for="13">1</label>
+                        <input type="radio" id="question2" name="The_location_of_the_heath_centre_was_convenient" value="2">
+                        <label for="14">2</label>
+                        <input type="radio" id="question2" name="The_location_of_the_heath_centre_was_convenient" value="3">
+                        <label for="15">3</label>
+                        <input type="radio" id="question2" name="The_location_of_the_heath_centre_was_convenient" value="4">
+                        <label for="16">4</label>
+                        <input type="radio" id="question2" name="The_location_of_the_heath_centre_was_convenient" value="5">
+                        <label for="17">5</label>
+                        <input type="radio" id="question2" name="The_location_of_the_heath_centre_was_convenient" value="N/A">
+                        <label for="18">N/A</label>
 
+                    </label>
+
+                    <br><br>
 
                     <label for="It_is_easy_to_find_a_member_of_staff">
                         <li>It is easy for families/carers to find a member of staff when needed</li>
@@ -131,7 +149,7 @@
 
 
                     <label for="The_layout_of_the_building_works_well">
-                        <li>The layout of the building works well overall</li>
+                        <li>The layout and clinical adjacencies of the building works well overall</li>
                         <input type="radio" id="question3" name="The_layout_of_the_building_works_well" value="1"
                             required>
                         <label for="25">1</label>
@@ -171,7 +189,7 @@
 
                     <label for="The_building_is_easy_to_navigate">
 
-                        <li>The building is easy to navigate with easy to follow signage for carers</li>
+                        <li>The building is easy to navigate with easy to follow signage</li>
                         <input type="radio" id="question5" name="The_building_is_easy_to_navigate" value="1" required>
                         <label for="43">1</label>
                         <input type="radio" id="question5" name="The_building_is_easy_to_navigate" value="2">
@@ -352,7 +370,7 @@
                         <label for="72">N/A</label>
                     </label>
                     <label for="The_equipment/furniture_in_the_clinic_rooms_is_of_a_high_standard">
-                        <li>The equipment/furniture in the clinic rooms is of a high standard</li>
+                        <li>The equipment/furniture in the clinic rooms meets my needs and is of a suitable quality</li>
                         <input type="radio" id="question13"
                             name="The_equipment/furniture_in_the_clinic_rooms_is_of_a_high_standard" value="1" required>
                         <label for="73">1</label>
@@ -372,28 +390,7 @@
                             name="The_equipment/furniture_in_the_clinic_rooms_is_of_a_high_standard" value="N/A">
                         <label for="78">N/A</label>
                     </label>
-                    <label for="The_equipment/furniture_in_the_clinic_rooms_meets_my_needs">
-                        <li>The equipment/furniture in the clinic rooms meets my needs</li>
-                        <input type="radio" id="question15"
-                            name="The_equipment/The_equipment/furniture_in_the_clinic_rooms_meets_my_needs" value="1"
-                            required>
-                        <label for="79">1</label>
-                        <input type="radio" id="question15"
-                            name="The_equipment/The_equipment/furniture_in_the_clinic_rooms_meets_my_needs" value="2">
-                        <label for="80">2</label>
-                        <input type="radio" id="question15"
-                            name="The_equipment/The_equipment/furniture_in_the_clinic_rooms_meets_my_needs" value="3">
-                        <label for="81">3</label>
-                        <input type="radio" id="question15"
-                            name="The_equipment/The_equipment/furniture_in_the_clinic_rooms_meets_my_needs" value="4">
-                        <label for="82">4</label>
-                        <input type="radio" id="question15"
-                            name="The_equipment/The_equipment/furniture_in_the_clinic_rooms_meets_my_needs" value="5">
-                        <label for="83">5</label>
-                        <input type="radio" id="question15"
-                            name="The_equipment/The_equipment/furniture_in_the_clinic_rooms_meets_my_needs" value="N/A">
-                        <label for="84">N/A</label>
-                    </label>
+                    
 
                     <br><br>
 
@@ -433,73 +430,20 @@
 
 
 
-                    <label for="internal_summer_temperature">
-                        <li>How would you rate the internal summer temperature?</li>
-                        <input type="radio" id="question15" name="internal_summer_temperature" value="1" required>
+                    <label for="internal_temperature">
+                        <li>How would you rate the internal temperature?</li>
+                        <input type="radio" id="question15" name="internal_temperature" value="1" required>
                         <label for="79">Too hot</label>
-                        <input type="radio" id="question15" name="internal_summer_temperature" value="2">
+                        <input type="radio" id="question15" name="internal_temperature" value="2">
                         <label for="80">Too cold</label>
-                        <input type="radio" id="question15" name="internal_summer_temperature" value="3">
+                        <input type="radio" id="question15" name="internal_temperature" value="3">
                         <label for="81">Just right</label>
-                        <input type="radio" id="question15" name="internal_summer_temperature" value="4">
+                        <input type="radio" id="question15" name="internal_temperature" value="4">
                         <label for="82">Varies</label>
-                        <input type="radio" id="question15" name="internal_summer_temperature" value="5">
+                        <input type="radio" id="question15" name="internal_temperature" value="5">
                         <label for="83">Not sure</label>
                     </label>
 
-
-                    <label for="control_summer_temperature">
-                        <li>Do you have the ability to control the internal summer temperature?</li>
-                        <input type="radio" id="question15" name="control_summer_temperature" value="1" required>
-                        <label for="79">Yes</label>
-                        <input type="radio" id="question15" name="control_summer_temperature" value="2">
-                        <label for="80">No</label>
-                    </label>
-
-                    <label for="internal_winter_temperature">
-                        <li>How would you rate the internal winter temperature?</li>
-                        <input type="radio" id="question15" name="internal_winter_temperature" value="1" required>
-                        <label for="79">Too hot</label>
-                        <input type="radio" id="question15" name="internal_winter_temperature" value="2">
-                        <label for="80">Too cold</label>
-                        <input type="radio" id="question15" name="internal_winter_temperature" value="3">
-                        <label for="81">Just right</label>
-                        <input type="radio" id="question15" name="internal_winter_temperature" value="4">
-                        <label for="82">Varies</label>
-                        <input type="radio" id="question15" name="internal_winter_temperature" value="5">
-                        <label for="83">Not sure</label>
-                    </label>
-
-
-                    <label for="control_winter_temperature">
-                        <li>Do you have the ability to control the internal winter temperature?</li>
-                        <input type="radio" id="question15" name="control_winter_temperature" value="1" required>
-                        <label for="79">Yes</label>
-                        <input type="radio" id="question15" name="control_winter_temperature" value="2">
-                        <label for="80">No</label>
-                    </label>
-
-                    <label for="internal_air_quality">
-                        <li>How would you rate the internal air quality</li>
-                        <input type="radio" id="question15" name="internal_air_quality" value="1" required>
-                        <label for="79">Stale/airless</label>
-                        <input type="radio" id="question15" name="internal_air_quality" value="2">
-                        <label for="80">Too fresh</label>
-                        <input type="radio" id="question15" name="internal_air_quality" value="3">
-                        <label for="81">Just right</label>
-                        <input type="radio" id="question15" name="internal_air_quality" value="4">
-                        <label for="82">Varies</label>
-                        <input type="radio" id="question15" name="internal_air_quality" value="5">
-                        <label for="83">Not sure</label>
-                    </label>
-
-                    <label for="Can_you_open_the_windows">
-                        <li>Can you open the windows?</li>
-                        <input type="radio" id="question15" name="Can_you_open_the_windows" value="1" required>
-                        <label for="79">Yes</label>
-                        <input type="radio" id="question15" name="Can_you_open_the_windows" value="2">
-                        <label for="80">No</label>
-                    </label>
 
                     <label for="internal_lighting">
                         <li>How would you rate the internal lighting</li>
@@ -515,14 +459,7 @@
                         <label for="83">Not sure</label>
                     </label>
 
-                    <label for="Can_you_control_the_lighting">
-                        <li>Can you control the internal lighting?</li>
-                        <input type="radio" id="question15" name="Can_you_open_the_windows" value="1" required>
-                        <label for="79">Yes</label>
-                        <input type="radio" id="question15" name="Can_you_open_the_windows" value="2">
-                        <label for="80">No</label>
-                    </label>
-
+                  
                     <label for="internal_sound_proofing">
                         <li>How would you rate the internal sound proofing</li>
                         <input type="radio" id="question15" name="internal_sound_proofing" value="1" required>
@@ -535,14 +472,6 @@
                         <label for="82">Varies</label>
                         <input type="radio" id="question15" name="internal_sound_proofing" value="5">
                         <label for="83">Not sure</label>
-                    </label>
-
-                    <label for="Can_you_control_the_sound_proofing">
-                        <li>Can you control the internal sound?</li>
-                        <input type="radio" id="question15" name="Can_you_open_the_windows" value="1" required>
-                        <label for="79">Yes</label>
-                        <input type="radio" id="question15" name="Can_you_open_the_windows" value="2">
-                        <label for="80">No</label>
                     </label>
 
 

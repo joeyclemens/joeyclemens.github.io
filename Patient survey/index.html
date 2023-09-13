@@ -19,7 +19,7 @@
        <div class="header">
         <img src="images/image001.png" alt="mjm logo">
        
-            <h1>Post Occupation Evaluation of <br> Tessa Jowell Health centre. <br> <u>Patient Survey</u> </h1>
+            <h1>Post Occupancy Evaluation of <br> Tessa Jowell Health centre. <br> <u>Patient Survey</u> </h1>
             <p>
               <div class="progress-container">
                   <div class="progress-bar" id="myBar"></div>
@@ -69,6 +69,17 @@
                 <label for="rfv">2. Reason for visit<br>
                   <textarea id="rfv" name="rfv" rows="4" cols="50" required placeholder="Please enter your reason for visiting the Tella Jowell Health Centre"></textarea>
               </label>
+              <br><br>
+              <P>Would question 2 be better as a drop down selection like below?</P>
+
+              <label for="rfvdp">2. Reason for visit</label>
+                <select id="rfvdp" name="rfvdp" required>
+                  <option value="">Please select</option>
+                  <option value="Patient">Patient</option>
+                  <option value="Carer">Carer</option>
+                  <option value="Other">Other</option>
+                  
+                </select>
 
                 <div class="department"> <p>3. Which departments have you visited?</p>  </div>
                    
@@ -345,146 +356,7 @@
                     
                 </label>
 
-               <!-- <br><br>
-                <label for="I_found_it_easy_access_to_building_text">
-                <textarea id="I_found_it_easy_access_to_building_text" type="textarea" name="I_found_it_easy_access_to_building_text" required placeholder="Please enter additional feedback for this question here"></textarea>
-                </label>-->
-
-                <label for="first_impression">
-                    <li>My first impression of the building was reassuring</li>
-                    <input
-                        type="radio"
-                        id="question3"
-                        name="first_impression"
-                        value="1"
-                        required>
-                    <label for="25">1</label>
-                    <input
-                        type="radio"
-                        id="question3"
-                        name="first_impression"
-                        value="2">
-                    <label for="26">2</label>
-                    <input
-                        type="radio"
-                        id="question3"
-                        name="first_impression"
-                        value="3">
-                    <label for="27">3</label>
-                    <input
-                        type="radio"
-                        id="question3"
-                        name="first_impression"
-                        value="4">
-                    <label for="28">4</label>
-                    <input
-                        type="radio"
-                        id="question3"
-                        name="first_impression"
-                        value="5">
-                    <label for="29">5</label>
-                    <input
-                        type="radio"
-                        id="question3"
-                        name="first_impression"
-                        value="N/A">
-                    <label for="30">N/A</label>
-                </label>
-
-                <!--<br><br>
-                <label for="first_impression_text">
-                <textarea id="first_impression_text" type="textarea" name="first_impression_text" placeholder="Please enter additional feedback for this question here"></textarea>
-                </label>-->
-
-                <label for="i_feel_safe">
-                    <li>I feel safe in the building </li>
-                    <input
-                        type="radio"
-                        id="question4"
-                        name="i_feel_safe"
-                        value="1"
-                        required>
-                    <label for="31">1</label>
-                    <input
-                        type="radio"
-                        id="question4"
-                        name="i_feel_safe"
-                        value="2">
-                    <label for="32">2</label>
-                    <input
-                        type="radio"
-                        id="question4"
-                        name="i_feel_safe"
-                        value="3">
-                    <label for="33">3</label>
-                    <input
-                        type="radio"
-                        id="question4"_feel_safe
-                        name="i_feel_safe"
-                        value="4">
-                    <label for="34">4</label>
-                    <input
-                        type="radio"
-                        id="question4"
-                        name="i_feel_safe"
-                        value="5">
-                    <label for="35">5</label>
-                    <input
-                        type="radio"
-                        id="question4"
-                        name="i_feel_safe"
-                        value="N/A">
-                    <label for="36">N/A</label>
-
-                </label>
-                <!--<br><br>
-                <label for="i_feel_safe_text">
-                <textarea id="i_feel_safe_text" type="textarea" name="i_feel_safe_text" placeholder="Please enter additional feedback for this question here"></textarea>
-                </label>-->
-                
-
-                <label for="The_layout_of_the_building">
-                
-                    <li>The layout of the building works well overall</li>
-                    <input
-                        type="radio"
-                        id="question5"
-                        name="The_layout_of_the_building"
-                        value="1"
-                        required>
-                    <label for="43">1</label>
-                    <input
-                        type="radio"
-                        id="question5"
-                        name="The_layout_of_the_building"
-                        value="2">
-                    <label for="44">2</label>
-                    <input
-                        type="radio"
-                        id="question5"
-                        name="The_layout_of_the_building"
-                        value="3">
-                    <label for="45">3</label>
-                    <input
-                        type="radio"
-                        id="question5"
-                        name="The_layout_of_the_building"
-                        value="4">
-                    <label for="46">4</label>
-                    <input
-                        type="radio"
-                        id="question5"
-                        name="The_layout_of_the_building"
-                        value="5">
-                    <label for="47">5</label>
-                    <input
-                        type="radio"
-                        id="question5"
-                        name="The_layout_of_the_building"
-                        value="N/A">
-                    <label for="48">N/A</label>
-                </label>
-
+              
                 <label for="building_navigation">
                 <li>The building is easy to navigate with easy to follow signage</li>
                 
@@ -715,57 +587,7 @@
 
         <br><br>-->
 
-          <label for="The_equipment/furniture_is_a_high_standard">
-            <li>The equipment/furniture in the clinic room is of a high standard</li>
-            <input
-                type="radio"
-                id="question11"
-                name="The_equipment/furniture_is_a_high_standard"
-                value="1"
-                required>
-            <label for="139">1</label>
-            <input
-                type="radio"
-                id="question11"
-                name="The_equipment/furniture_is_a_high_standard"
-                value="2">
-            <label for="140">2</label>
-            <input
-                type="radio"
-                id="question11"
-                name="The_equipment/furniture_is_a_high_standard"
-                value="3">
-            <label for="141">3</label>
-            <input
-                type="radio"
-                id="question11"
-                name="The_equipment/furniture_is_a_high_standard"
-                value="4">
-            <label for="142">4</label>
-            <input
-                type="radio"
-                id="question11"
-                name="The_equipment/furniture_is_a_high_standard"
-                value="5">
-            <label for="143">5</label>
-            <input
-                type="radio"
-                id="question11"
-                name="The_equipment/furniture_is_a_high_standard"
-                value="N/A">
-            <label for="144">N/A</label>
-            
-        </label>
-
-        <!-- <br><br>
-       <label for="The_equipment/furniture_is_a_high_standard_text">
-        <textarea id="The_equipment/furniture_is_a_high_standard_text" name= "The_equipment/furniture_is_a_high_standard_text" required placeholder="Please enter additional feedback for this question here"></textarea>
-        </label> -->
-
-
-
-
-
+          
             <label for="equipment/furniture_meets_my_needs">
                 <li>The equipment/furniture in the clinic rooms meets my needs</li>
                 <input
@@ -812,18 +634,15 @@
             
            
         <br><br>
-       <label for="features_that_you_liked_or_disliked_department">
-       <li id="departmentLabel">Were there any features that you liked or disliked in the <u><b>xxx</b></u> department?</li>
-        <textarea id="features_that_you_liked_or_disliked_department_text" name= "features_that_you_liked_or_disliked_department_text" required placeholder="Please enter your answer for this question here"></textarea>
+       <label for="features_that_you_liked_or_disliked_building">
+       <li id="departmentLabel">Were there any features that you liked or disliked in the buidling?</li>
+        <textarea id="features_that_you_liked_or_disliked_building_text" name= "features_that_you_liked_or_disliked_building_text" required placeholder="Please enter your answer for this question here"></textarea>
         
       </label> 
 
 
         <br><br>
-        <label for="What_changes_would_you_make">
-         <li>What changes would you make to the new <u><b>xxx</b></u> environment if you were able to?</li>
-         <textarea id="What_changes_would_you_make_text" name= "What_changes_would_you_make_text" required placeholder="Please enter your answer for this question here"></textarea>
-         </label> 
+        
       
          <label for="internal_temperature">
           <li>How would you rate the rate the internal temperature?</li>
@@ -861,41 +680,7 @@
          
       </label>
 
-      <label for="internal_air_quality">
-        <li>How would you rate the internal air quality?</li>
-        <input
-            type="radio"
-            id="question12"
-            name="internal_air_quality"
-            value="1"
-            required>
-        <label for="139">Stale/airless</label>
-        <input
-            type="radio"
-            id="question12"
-            name="internal_air_quality"
-            value="2">
-        <label for="140">Too fresh</label>
-        <input
-            type="radio"
-            id="question12"
-            name="internal_air_quality"
-            value="3">
-        <label for="141">Just right</label>
-        <input
-            type="radio"
-            id="question12"
-            name="internal_air_quality"
-            value="4">
-        <label for="142">Varies</label>
-        <input
-            type="radio"
-            id="question12"
-            name="internal_air_quality"
-            value="5">
-        <label for="143">Unsure</label>
-       
-    </label>
+      
 
     <label for="internal_lighting">
       <li>How would you rate the internal lighting?</li>
